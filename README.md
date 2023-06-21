@@ -123,3 +123,101 @@ class Ui_Form(object):
 
 <h4>Директория RandomMeovSentence/</h4>
 
+>**__init__.py**
+
+Файл инициализации. В нем содержится следующий код:
+
+```python
+from loguru import logger
+
+from RandomMeovSentence.RandomSentence import Sentence
+
+logger.info(f"Класс Sentence импортирован: {Sentence}")
+```
+Файл предназначен для упрощения импортирования класса ___Sentence___.
+
+>**RandomSentence.py<br>**
+>>**Класс Sentence**
+>>>**Метод random_moew_sentence()**
+>>>
+>>>**Метод sentence()**
+>>>
+Данный файл состоит из класса __Sentence__, в который входят методы __random_moew_sentence()__ и __sentence__. 
+
+__random_moew_sentence()__ моделирует предложение из слов "Мяу" с применением знаков препинания и смайликов, код метода представлен ниже:
+
+```python
+@logger.catch()
+def random_moew_sentence(self) -> str:
+    """
+    Функция моделирует предложение состаящее из рандомного количества слов Мяу, знаков препинания и смайликов
+    :return:
+    """
+    try:
+
+        _words = ['мяу'] * random.randint(3, 10)
+        logger.info(_words)
+
+        _words[-1] = _words[-1] + str(random.choice(['.', '!', '?']))
+
+        for _ in range(0, len(_words) - 1):
+
+            if random.random() < 0.01:
+                _words[_] = _words[_] + str(random.choice(['😺', '😸', '😹', '😻', '😼', '😽', '🙀', '😿', '😾']))
+
+            if random.random() < 0.1:
+                _words[_] = _words[_] + str(random.choice([',', ':', ' -', '']))
+
+        _sentence = ' '.join(_words)
+        _sentence = _sentence.capitalize()
+        logger.info(f'Сформированное сообщение random_moew_sentence: {_sentence}')
+
+        return str(_sentence)
+
+    except Exception as process_file_err:
+        logger.error(f'Произошла ошибка в преобразовании предложения в meow: {process_file_err}')
+```
+
+__sentence()__ - создает рандомное количество предложений, полученных с помощью метода __random_moew_sentence()__. Код представлен ниже:
+
+```python
+@logger.catch()
+def sentence(self) -> str:
+    """
+    Функция предназначена для рандомного количества выполнений функции random_moew_sentence.
+    Функция возвращает готовое предложение из слов Мяу со знаками препинания и смайликами.
+    :return:
+    """
+    try:
+        _outsectence = []
+        if random.random() > 0.5:
+            _outsectence.append(self.random_moew_sentence())
+        elif random.random() < 0.01:
+            for a in range(6):
+                _outsectence.append(self.random_moew_sentence() + ' ')
+        elif random.random() < 0.1:
+            for b in range(5):
+                _outsectence.append(self.random_moew_sentence() + ' ')
+        elif random.random() < 0.2:
+            for c in range(4):
+                _outsectence.append(self.random_moew_sentence() + ' ')
+        elif random.random() < 0.3:
+            for d in range(3):
+                _outsectence.append(self.random_moew_sentence() + ' ')
+        elif random.random() < 0.4:
+            for f in range(2):
+                _outsectence.append(self.random_moew_sentence() + ' ')
+        elif random.random() < 0.5:
+            for g in range(1):
+                _outsectence.append(self.random_moew_sentence() + ' ')
+
+        _output = ''.join(_outsectence)
+        logger.info(f'Сформированное сообщение sentence: {_output}')
+
+        return _output
+
+    except Exception as err_sentence:
+        logger.error(err_sentence)
+        return 'Мяу мяу мяу мяу, мяу мяу мяу мяу мяу?'
+```
+
