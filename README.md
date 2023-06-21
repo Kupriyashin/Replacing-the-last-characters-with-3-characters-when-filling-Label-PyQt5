@@ -33,7 +33,7 @@
 >>**Main.py<br>**
 >>**Requirements<br>**
 
-<h3>Основные функции проекта:</h3>
+<h3>Основные составляющие проекта:</h3>
 
 <h4>Директория Forms/</h4>
 
@@ -221,3 +221,63 @@ def sentence(self) -> str:
         return 'Мяу мяу мяу мяу, мяу мяу мяу мяу мяу?'
 ```
 
+<h4>Основной файл main.py/</h4>
+
+Основной файл проекта. В нем представлен основной класс формы __MainWindow__, в конструкторе которого объявляется доступ к элементам формы из **TextForm.py**, коннектится нажимание кнопки с выполнением метода **add_text()** и объявляется объект класса **Sentence()**
+
+Код инициализатора класса __MainWindow__ представлен ниже:
+
+```python
+def __init__(self):
+    super(MainWindow, self).__init__()
+
+    self.ui = Ui_Form()
+    self.ui.setupUi(self)
+    logger.info(f"Объектное окружение установлено: {self.ui}")
+
+    self.sentence = Sentence()
+    logger.info(f"Объект Sentence создан: {self.sentence}")
+
+    self.ui.pushButton.clicked.connect(lambda: self.add_text())
+```
+
+>**Метод add_text()**
+
+Метод срабатывает при нажатии кнопки на форме. Формируется предложение с использованием функции **sentence()** из класса **Sentence**, который присваивается переменной **_sentence** (предложение содержит рандомное количество символов).
+Далее вычисляется размер одного символа для данного Label с использованием класса **QFontMetrics** и присваивается переменной **_metric**
+Далее используя метод **elidedText** класса **QFontMetrics** получается текст. В случае если текст по ширине больше LAbel в конце он обрезается и дополняются 3 точки. Код метода **add_text()** представлен ниже:
+
+```python
+@logger.catch()
+@pyqtSlot()
+def add_text(self):
+    logger.info(f"Метод {self.add_text} использован")
+
+    _sentence = self.sentence.sentence()
+    logger.info(f"ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: {_sentence}")
+
+    _metric = QFontMetrics(self.ui.label_2.font())
+    logger.info(f"Получен объект метрики текста: {_metric}")
+
+    _elided = _metric.elidedText(_sentence, Qt.ElideRight, self.ui.label_2.width())
+    logger.info(f"Объект _elided создан: {_elided}")
+
+    self.ui.label_2.setText(str(_elided))
+```
+
+>**Конструкция if __name__ == '__main__':**
+
+Данная конструкция запускает программу. Код представлен ниже:
+
+```python
+logger.info("Программа запускается")
+
+_app = QApplication(sys.argv)
+_app.setStyle("Fusion")
+_window = MainWindow()
+_window.show()
+
+logger.info("Программа запущена")
+
+sys.exit(_app.exec_())
+```
