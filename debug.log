@@ -1,0 +1,798 @@
+2023-06-21T11:42:55.952002+0300 INFO Программа запускается
+2023-06-21T11:43:12.358438+0300 INFO Программа запускается
+2023-06-21T11:43:12.368441+0300 INFO Объектное окружение установлено: <Forms.TextForm.Ui_Form object at 0x00000146A309ABF0>
+2023-06-21T11:43:12.425454+0300 INFO Программа запущена
+2023-06-21T11:44:03.394460+0300 INFO Программа запускается
+2023-06-21T11:44:03.403463+0300 INFO Объектное окружение установлено: <Forms.TextForm.Ui_Form object at 0x000001EDA9C24940>
+2023-06-21T11:44:03.670487+0300 INFO Программа запущена
+2023-06-21T11:46:03.242173+0300 INFO Программа запускается
+2023-06-21T11:46:03.251175+0300 INFO Объектное окружение установлено: <Forms.TextForm.Ui_Form object at 0x000002681C267850>
+2023-06-21T11:46:03.553244+0300 INFO Программа запущена
+2023-06-21T11:46:04.486767+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000002681C514040>> использован
+2023-06-21T11:46:09.902770+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000002681C514040>> использован
+2023-06-21T11:46:10.894672+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000002681C514040>> использован
+2023-06-21T11:48:39.805509+0300 INFO Программа запускается
+2023-06-21T11:48:39.814511+0300 INFO Объектное окружение установлено: <Forms.TextForm.Ui_Form object at 0x00000159A83B4070>
+2023-06-21T11:48:40.088965+0300 INFO Программа запущена
+2023-06-21T11:48:41.238616+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x00000159A876C310>> использован
+2023-06-21T11:48:41.239618+0300 ERROR An error has been caught in function 'add_text', process 'MainProcess' (15716), thread 'MainThread' (16848):
+Traceback (most recent call last):
+
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2022.3.1\plugins\python-ce\helpers\pydev\pydevd.py", line 2195, in <module>
+    main()
+    └ <function main at 0x00000159A8395120>
+
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2022.3.1\plugins\python-ce\helpers\pydev\pydevd.py", line 2177, in main
+    globals = debugger.run(setup['file'], None, None, is_module)
+              │        │   │                          └ False
+              │        │   └ {'port': 59249, 'vm_type': None, 'client': '127.0.0.1', 'server': False, 'DEBUG_RECORD_SOCKET_READS': False, 'multiproc': Fal...
+              │        └ <function PyDB.run at 0x00000159A8394160>
+              └ <__main__.PyDB object at 0x00000159A755D1B0>
+
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2022.3.1\plugins\python-ce\helpers\pydev\pydevd.py", line 1489, in run
+    return self._exec(is_module, entry_point_fn, module_name, file, globals, locals)
+           │    │     │          │               │            │     │        └ {'__name__': '__main__', '__doc__': None, '__package__': '', '__loader__': <_frozen_importlib_external.SourceFileLoader objec...
+           │    │     │          │               │            │     └ {'__name__': '__main__', '__doc__': None, '__package__': '', '__loader__': <_frozen_importlib_external.SourceFileLoader objec...
+           │    │     │          │               │            └ 'D:\\test_label_pyqt5\\main.py'
+           │    │     │          │               └ None
+           │    │     │          └ ''
+           │    │     └ False
+           │    └ <function PyDB._exec at 0x00000159A83941F0>
+           └ <__main__.PyDB object at 0x00000159A755D1B0>
+
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2022.3.1\plugins\python-ce\helpers\pydev\pydevd.py", line 1496, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+    │             │        │     │        └ {'__name__': '__main__', '__doc__': None, '__package__': '', '__loader__': <_frozen_importlib_external.SourceFileLoader objec...
+    │             │        │     └ {'__name__': '__main__', '__doc__': None, '__package__': '', '__loader__': <_frozen_importlib_external.SourceFileLoader objec...
+    │             │        └ 'D:\\test_label_pyqt5\\main.py'
+    │             └ <function execfile at 0x00000159A74BD240>
+    └ <module '_pydev_bundle.pydev_imports' from 'C:\\Program Files\\JetBrains\\PyCharm Community Edition 2022.3.1\\plugins\\python...
+
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2022.3.1\plugins\python-ce\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+                 │              │              │     └ {'__name__': '__main__', '__doc__': None, '__package__': '', '__loader__': <_frozen_importlib_external.SourceFileLoader objec...
+                 │              │              └ {'__name__': '__main__', '__doc__': None, '__package__': '', '__loader__': <_frozen_importlib_external.SourceFileLoader objec...
+                 │              └ 'D:\\test_label_pyqt5\\main.py'
+                 └ 'import sys\n\nfrom PyQt5 import QtWidgets\nfrom PyQt5.QtCore import pyqtSlot\nfrom PyQt5.QtWidgets import QApplication\nfrom...
+
+  File "D:\test_label_pyqt5\main.py", line 47, in <module>
+    sys.exit(_app.exec_())
+    │   │    │    └ <built-in method exec_>
+    │   │    └ <PyQt5.QtWidgets.QApplication object at 0x00000159A849B5B0>
+    │   └ <built-in function exit>
+    └ <module 'sys' (built-in)>
+
+  File "D:\test_label_pyqt5\main.py", line 26, in <lambda>
+    self.ui.pushButton.clicked.connect(lambda: self.add_text())
+    │    │  │          │                       │    └ <function MainWindow.add_text at 0x00000159A876C280>
+    │    │  │          │                       └ <__main__.MainWindow object at 0x00000159A876C310>
+    │    │  │          └ <unbound PYQT_SIGNAL clicked(bool)>
+    │    │  └ <PyQt5.QtWidgets.QPushButton object at 0x00000159A876C700>
+    │    └ <Forms.TextForm.Ui_Form object at 0x00000159A83B4070>
+    └ <__main__.MainWindow object at 0x00000159A876C310>
+
+> File "D:\test_label_pyqt5\main.py", line 33, in add_text
+    _sentence = Sentence.sentence()
+                │        └ <function Sentence.sentence at 0x00000159A873FD90>
+                └ <class 'RandomMeovSentence.RandomSentence.Sentence'>
+
+TypeError: Sentence.sentence() missing 1 required positional argument: 'self'
+2023-06-21T11:48:41.262623+0300 INFO Предложение для вставки получено: None
+2023-06-21T11:51:24.828847+0300 INFO Программа запускается
+2023-06-21T11:51:24.837849+0300 INFO Объектное окружение установлено: <Forms.TextForm.Ui_Form object at 0x000001829AA24070>
+2023-06-21T11:51:24.837849+0300 INFO Объект Sentence создан: <RandomMeovSentence.RandomSentence.Sentence object at 0x000001829AA32A10>
+2023-06-21T11:51:25.104557+0300 INFO Программа запущена
+2023-06-21T11:51:57.792777+0300 INFO Программа запускается
+2023-06-21T11:51:57.801779+0300 INFO Объектное окружение установлено: <Forms.TextForm.Ui_Form object at 0x00000213FE224070>
+2023-06-21T11:51:57.801779+0300 INFO Объект Sentence создан: <RandomMeovSentence.RandomSentence.Sentence object at 0x00000213FE232A10>
+2023-06-21T11:51:58.060837+0300 INFO Программа запущена
+2023-06-21T11:51:58.991111+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x00000213FE5B83A0>> использован
+2023-06-21T11:51:58.991111+0300 INFO Предложение для вставки получено: <bound method Sentence.sentence of <RandomMeovSentence.RandomSentence.Sentence object at 0x00000213FE232A10>>
+2023-06-21T11:52:28.078568+0300 INFO Программа запускается
+2023-06-21T11:52:28.087571+0300 INFO Объектное окружение установлено: <Forms.TextForm.Ui_Form object at 0x000002A33995FFA0>
+2023-06-21T11:52:28.088570+0300 INFO Объект Sentence создан: <RandomMeovSentence.RandomSentence.Sentence object at 0x000002A339946A10>
+2023-06-21T11:52:28.346629+0300 INFO Программа запущена
+2023-06-21T11:52:29.246855+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000002A339C2C3A0>> использован
+2023-06-21T11:52:29.247855+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T11:52:29.247855+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу?
+2023-06-21T11:52:29.247855+0300 INFO Сформированное сообщение sentence: Мяу мяу мяу мяу? 
+2023-06-21T11:52:29.247855+0300 INFO Предложение для вставки получено: Мяу мяу мяу мяу? 
+2023-06-21T11:52:37.934398+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000002A339C2C3A0>> использован
+2023-06-21T11:52:37.935410+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T11:52:37.935410+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу мяу мяу мяу?
+2023-06-21T11:52:37.935410+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T11:52:37.935410+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу мяу мяу...
+2023-06-21T11:52:37.935410+0300 INFO Сформированное сообщение sentence: Мяу мяу мяу мяу мяу мяу мяу мяу? Мяу мяу мяу мяу мяу мяу мяу... 
+2023-06-21T11:52:37.936410+0300 INFO Предложение для вставки получено: Мяу мяу мяу мяу мяу мяу мяу мяу? Мяу мяу мяу мяу мяу мяу мяу... 
+2023-06-21T11:52:40.542324+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000002A339C2C3A0>> использован
+2023-06-21T11:52:40.543316+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T11:52:40.543316+0300 INFO Сформированное сообщение random_moew_sentence: Мяу - мяу мяу мяу мяу мяу мяу мяу.
+2023-06-21T11:52:40.543316+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T11:52:40.543316+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу!
+2023-06-21T11:52:40.543316+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T11:52:40.544316+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу: мяу мяу мяу мяу...
+2023-06-21T11:52:40.544316+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T11:52:40.544316+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу мяу мяу мяу...
+2023-06-21T11:52:40.544316+0300 INFO Сформированное сообщение sentence: Мяу - мяу мяу мяу мяу мяу мяу мяу. Мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу! Мяу мяу мяу мяу мяу: мяу мяу мяу мяу... Мяу мяу мяу мяу мяу мяу мяу мяу... 
+2023-06-21T11:52:40.545316+0300 INFO Предложение для вставки получено: Мяу - мяу мяу мяу мяу мяу мяу мяу. Мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу! Мяу мяу мяу мяу мяу: мяу мяу мяу мяу... Мяу мяу мяу мяу мяу мяу мяу мяу... 
+2023-06-21T11:52:43.862342+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000002A339C2C3A0>> использован
+2023-06-21T11:52:43.863353+0300 INFO ['мяу', 'мяу', 'мяу']
+2023-06-21T11:52:43.863353+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу.
+2023-06-21T11:52:43.863353+0300 INFO Сформированное сообщение sentence: Мяу мяу мяу.
+2023-06-21T11:52:43.863353+0300 INFO Предложение для вставки получено: Мяу мяу мяу.
+2023-06-21T11:52:51.046358+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000002A339C2C3A0>> использован
+2023-06-21T11:52:51.047358+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T11:52:51.047358+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу мяу мяу мяу мяу?
+2023-06-21T11:52:51.047358+0300 INFO Сформированное сообщение sentence: Мяу мяу мяу мяу мяу мяу мяу мяу мяу?
+2023-06-21T11:52:51.047358+0300 INFO Предложение для вставки получено: Мяу мяу мяу мяу мяу мяу мяу мяу мяу?
+2023-06-21T11:55:00.864125+0300 INFO Программа запускается
+2023-06-21T11:55:00.873127+0300 INFO Объектное окружение установлено: <Forms.TextForm.Ui_Form object at 0x000001168B8BF340>
+2023-06-21T11:55:00.873127+0300 INFO Объект Sentence создан: <RandomMeovSentence.RandomSentence.Sentence object at 0x000001168B6F0100>
+2023-06-21T11:55:01.143190+0300 INFO Программа запущена
+2023-06-21T11:55:02.614107+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000001168BB4C3A0>> использован
+2023-06-21T11:55:02.615107+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T11:55:02.615107+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу, мяу мяу!
+2023-06-21T11:55:02.616108+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T11:55:02.616108+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу?
+2023-06-21T11:55:02.616108+0300 INFO Сформированное сообщение sentence: Мяу мяу мяу мяу, мяу мяу! Мяу мяу мяу мяу мяу? 
+2023-06-21T11:55:02.616108+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу мяу мяу мяу, мяу мяу! Мяу мяу мяу мяу мяу? 
+2023-06-21T11:55:05.446262+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000001168BB4C3A0>> использован
+2023-06-21T11:55:05.447262+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T11:55:05.447262+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу: мяу мяу?
+2023-06-21T11:55:05.447262+0300 INFO Сформированное сообщение sentence: Мяу мяу мяу мяу мяу: мяу мяу?
+2023-06-21T11:55:05.447262+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу мяу мяу мяу мяу: мяу мяу?
+2023-06-21T11:55:07.254254+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000001168BB4C3A0>> использован
+2023-06-21T11:55:07.255266+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T11:55:07.255266+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу мяу, мяу?
+2023-06-21T11:55:07.255266+0300 INFO Сформированное сообщение sentence: Мяу мяу мяу мяу мяу мяу, мяу?
+2023-06-21T11:55:07.255266+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу мяу мяу мяу мяу мяу, мяу?
+2023-06-21T11:55:08.765981+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000001168BB4C3A0>> использован
+2023-06-21T11:55:08.766981+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T11:55:08.766981+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу?
+2023-06-21T11:55:08.766981+0300 INFO Сформированное сообщение sentence: Мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу?
+2023-06-21T11:55:08.766981+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу?
+2023-06-21T11:55:09.830251+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000001168BB4C3A0>> использован
+2023-06-21T11:55:09.831263+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T11:55:09.831263+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу мяу мяу мяу мяу?
+2023-06-21T11:55:09.831263+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T11:55:09.831263+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу мяу мяу.
+2023-06-21T11:55:09.832263+0300 INFO ['мяу', 'мяу', 'мяу']
+2023-06-21T11:55:09.832263+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу.
+2023-06-21T11:55:09.832263+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T11:55:09.832263+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу мяу мяу.
+2023-06-21T11:55:09.832263+0300 INFO Сформированное сообщение sentence: Мяу мяу мяу мяу мяу мяу мяу мяу мяу? Мяу мяу мяу мяу мяу мяу мяу. Мяу мяу мяу. Мяу мяу мяу мяу мяу мяу мяу. 
+2023-06-21T11:55:09.833264+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу мяу мяу мяу мяу мяу мяу мяу мяу? Мяу мяу мяу мяу мяу мяу мяу. Мяу мяу мяу. Мяу мяу мяу мяу мяу мяу мяу. 
+2023-06-21T11:59:56.720841+0300 INFO Программа запускается
+2023-06-21T11:59:56.729844+0300 INFO Объектное окружение установлено: <Forms.TextForm.Ui_Form object at 0x000001C6A8C787C0>
+2023-06-21T11:59:56.729844+0300 INFO Объект Sentence создан: <RandomMeovSentence.RandomSentence.Sentence object at 0x000001C6A8C60340>
+2023-06-21T11:59:56.989903+0300 INFO Программа запущена
+2023-06-21T11:59:58.294361+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000001C6A8F0C430>> использован
+2023-06-21T11:59:58.295361+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T11:59:58.295361+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу!
+2023-06-21T11:59:58.295361+0300 INFO Сформированное сообщение sentence: Мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу! 
+2023-06-21T11:59:58.295361+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу! 
+2023-06-21T11:59:58.296361+0300 INFO Получен объект метрики текста: <PyQt5.QtGui.QFontMetrics object at 0x000001C6A8E9F920>
+2023-06-21T11:59:58.297361+0300 ERROR An error has been caught in function '<lambda>', process 'MainProcess' (14168), thread 'MainThread' (10320):
+Traceback (most recent call last):
+
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2022.3.1\plugins\python-ce\helpers\pydev\pydevd.py", line 2195, in <module>
+    main()
+    └ <function main at 0x000001C6A8C35120>
+
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2022.3.1\plugins\python-ce\helpers\pydev\pydevd.py", line 2177, in main
+    globals = debugger.run(setup['file'], None, None, is_module)
+              │        │   │                          └ False
+              │        │   └ {'port': 59353, 'vm_type': None, 'client': '127.0.0.1', 'server': False, 'DEBUG_RECORD_SOCKET_READS': False, 'multiproc': Fal...
+              │        └ <function PyDB.run at 0x000001C6A8C34160>
+              └ <__main__.PyDB object at 0x000001C6A7DFD1B0>
+
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2022.3.1\plugins\python-ce\helpers\pydev\pydevd.py", line 1489, in run
+    return self._exec(is_module, entry_point_fn, module_name, file, globals, locals)
+           │    │     │          │               │            │     │        └ {'__name__': '__main__', '__doc__': None, '__package__': '', '__loader__': <_frozen_importlib_external.SourceFileLoader objec...
+           │    │     │          │               │            │     └ {'__name__': '__main__', '__doc__': None, '__package__': '', '__loader__': <_frozen_importlib_external.SourceFileLoader objec...
+           │    │     │          │               │            └ 'D:\\test_label_pyqt5\\main.py'
+           │    │     │          │               └ None
+           │    │     │          └ ''
+           │    │     └ False
+           │    └ <function PyDB._exec at 0x000001C6A8C341F0>
+           └ <__main__.PyDB object at 0x000001C6A7DFD1B0>
+
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2022.3.1\plugins\python-ce\helpers\pydev\pydevd.py", line 1496, in _exec
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+    │             │        │     │        └ {'__name__': '__main__', '__doc__': None, '__package__': '', '__loader__': <_frozen_importlib_external.SourceFileLoader objec...
+    │             │        │     └ {'__name__': '__main__', '__doc__': None, '__package__': '', '__loader__': <_frozen_importlib_external.SourceFileLoader objec...
+    │             │        └ 'D:\\test_label_pyqt5\\main.py'
+    │             └ <function execfile at 0x000001C6A7D5D240>
+    └ <module '_pydev_bundle.pydev_imports' from 'C:\\Program Files\\JetBrains\\PyCharm Community Edition 2022.3.1\\plugins\\python...
+
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2022.3.1\plugins\python-ce\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+                 │              │              │     └ {'__name__': '__main__', '__doc__': None, '__package__': '', '__loader__': <_frozen_importlib_external.SourceFileLoader objec...
+                 │              │              └ {'__name__': '__main__', '__doc__': None, '__package__': '', '__loader__': <_frozen_importlib_external.SourceFileLoader objec...
+                 │              └ 'D:\\test_label_pyqt5\\main.py'
+                 └ 'import sys\n\nfrom PyQt5 import QtWidgets\nfrom PyQt5.QtCore import Qt\nfrom PyQt5.QtCore import pyqtSlot\nfrom PyQt5.QtGui ...
+
+  File "D:\test_label_pyqt5\main.py", line 58, in <module>
+    sys.exit(_app.exec_())
+    │   │    │    └ <built-in method exec_>
+    │   │    └ <PyQt5.QtWidgets.QApplication object at 0x000001C6A8D3B640>
+    │   └ <built-in function exit>
+    └ <module 'sys' (built-in)>
+
+> File "D:\test_label_pyqt5\main.py", line 31, in <lambda>
+    self.ui.pushButton.clicked.connect(lambda: self.add_text())
+    │    │  │          │                       │    └ <function MainWindow.add_text at 0x000001C6A8F0C3A0>
+    │    │  │          │                       └ <__main__.MainWindow object at 0x000001C6A8F0C430>
+    │    │  │          └ <unbound PYQT_SIGNAL clicked(bool)>
+    │    │  └ <PyQt5.QtWidgets.QPushButton object at 0x000001C6A8F0C820>
+    │    └ <Forms.TextForm.Ui_Form object at 0x000001C6A8C787C0>
+    └ <__main__.MainWindow object at 0x000001C6A8F0C430>
+
+  File "D:\test_label_pyqt5\main.py", line 44, in add_text
+    _elided = _metric.elidedText(text=_sentence, mode=Qt.ElideRight, width=self.ui.label_2.width())
+              │       │               │               │  │                 │    │  │       └ <built-in method width>
+              │       │               │               │  │                 │    │  └ <PyQt5.QtWidgets.QLabel object at 0x000001C6A8F0C670>
+              │       │               │               │  │                 │    └ <Forms.TextForm.Ui_Form object at 0x000001C6A8C787C0>
+              │       │               │               │  │                 └ <__main__.MainWindow object at 0x000001C6A8F0C430>
+              │       │               │               │  └ 1
+              │       │               │               └ <class 'PyQt5.QtCore.Qt'>
+              │       │               └ 'Мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу! '
+              │       └ <built-in method elidedText>
+              └ <PyQt5.QtGui.QFontMetrics object at 0x000001C6A8E9F920>
+
+TypeError: elidedText(self, text: str, mode: Qt.TextElideMode, width: int, flags: int = 0): 'text' is not a valid keyword argument
+2023-06-21T12:00:29.092997+0300 INFO Программа запускается
+2023-06-21T12:00:29.102000+0300 INFO Объектное окружение установлено: <Forms.TextForm.Ui_Form object at 0x0000023A859287C0>
+2023-06-21T12:00:29.102000+0300 INFO Объект Sentence создан: <RandomMeovSentence.RandomSentence.Sentence object at 0x0000023A85910340>
+2023-06-21T12:00:29.359058+0300 INFO Программа запущена
+2023-06-21T12:00:30.438009+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x0000023A85BBC430>> использован
+2023-06-21T12:00:30.439020+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:00:30.439020+0300 INFO Сформированное сообщение random_moew_sentence: Мяу, мяу мяу мяу мяу мяу!
+2023-06-21T12:00:30.439020+0300 INFO Сформированное сообщение sentence: Мяу, мяу мяу мяу мяу мяу!
+2023-06-21T12:00:30.439020+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу, мяу мяу мяу мяу мяу!
+2023-06-21T12:00:30.440021+0300 INFO Получен объект метрики текста: <PyQt5.QtGui.QFontMetrics object at 0x0000023A85B4FBC0>
+2023-06-21T12:00:30.441021+0300 INFO Объект _elided создан: Мяу, мяу мяу мяу мяу мяу!
+2023-06-21T12:00:32.797932+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x0000023A85BBC430>> использован
+2023-06-21T12:00:32.798935+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:00:32.798935+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу мяу мяу мяу.
+2023-06-21T12:00:32.798935+0300 INFO Сформированное сообщение sentence: Мяу мяу мяу мяу мяу мяу мяу мяу.
+2023-06-21T12:00:32.798935+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу мяу мяу мяу мяу мяу мяу мяу.
+2023-06-21T12:00:32.798935+0300 INFO Получен объект метрики текста: <PyQt5.QtGui.QFontMetrics object at 0x0000023A85B4F7D0>
+2023-06-21T12:00:32.799934+0300 INFO Объект _elided создан: Мяу мяу мяу мяу мяу мяу мяу мяу.
+2023-06-21T12:00:34.302012+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x0000023A85BBC430>> использован
+2023-06-21T12:00:34.302012+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:00:34.303015+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу.
+2023-06-21T12:00:34.303015+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:00:34.303015+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу.
+2023-06-21T12:00:34.303015+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:00:34.303015+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу мяу мяу мяу!
+2023-06-21T12:00:34.304015+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:00:34.304015+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу мяу мяу - мяу мяу мяу?
+2023-06-21T12:00:34.304015+0300 INFO Сформированное сообщение sentence: Мяу мяу мяу мяу мяу. Мяу мяу мяу мяу. Мяу мяу мяу мяу мяу мяу мяу мяу! Мяу мяу мяу мяу мяу мяу мяу - мяу мяу мяу? 
+2023-06-21T12:00:34.304015+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу мяу мяу мяу мяу. Мяу мяу мяу мяу. Мяу мяу мяу мяу мяу мяу мяу мяу! Мяу мяу мяу мяу мяу мяу мяу - мяу мяу мяу? 
+2023-06-21T12:00:34.305015+0300 INFO Получен объект метрики текста: <PyQt5.QtGui.QFontMetrics object at 0x0000023A85B4F7D0>
+2023-06-21T12:00:34.305015+0300 INFO Объект _elided создан: Мяу мяу мяу мяу мяу. Мяу мяу мяу мяу. Мяу мяу мя…
+2023-06-21T12:00:38.854167+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x0000023A85BBC430>> использован
+2023-06-21T12:00:38.854167+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:00:38.855179+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу?
+2023-06-21T12:00:38.855179+0300 INFO Сформированное сообщение sentence: Мяу мяу мяу мяу мяу?
+2023-06-21T12:00:38.855179+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу мяу мяу мяу мяу?
+2023-06-21T12:00:38.855179+0300 INFO Получен объект метрики текста: <PyQt5.QtGui.QFontMetrics object at 0x0000023A85B4FBC0>
+2023-06-21T12:00:38.855179+0300 INFO Объект _elided создан: Мяу мяу мяу мяу мяу?
+2023-06-21T12:00:40.693798+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x0000023A85BBC430>> использован
+2023-06-21T12:00:40.694799+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:00:40.694799+0300 INFO Сформированное сообщение random_moew_sentence: Мяу: мяу: мяу мяу мяу мяу мяу.
+2023-06-21T12:00:40.694799+0300 INFO Сформированное сообщение sentence: Мяу: мяу: мяу мяу мяу мяу мяу.
+2023-06-21T12:00:40.694799+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу: мяу: мяу мяу мяу мяу мяу.
+2023-06-21T12:00:40.695799+0300 INFO Получен объект метрики текста: <PyQt5.QtGui.QFontMetrics object at 0x0000023A85B4F7D0>
+2023-06-21T12:00:40.695799+0300 INFO Объект _elided создан: Мяу: мяу: мяу мяу мяу мяу мяу.
+2023-06-21T12:00:42.029932+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x0000023A85BBC430>> использован
+2023-06-21T12:00:42.029932+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:00:42.030943+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу: мяу.
+2023-06-21T12:00:42.030943+0300 INFO Сформированное сообщение sentence: Мяу мяу мяу: мяу.
+2023-06-21T12:00:42.030943+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу мяу мяу: мяу.
+2023-06-21T12:00:42.030943+0300 INFO Получен объект метрики текста: <PyQt5.QtGui.QFontMetrics object at 0x0000023A85B4F920>
+2023-06-21T12:00:42.031943+0300 INFO Объект _elided создан: Мяу мяу мяу: мяу.
+2023-06-21T12:00:43.293931+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x0000023A85BBC430>> использован
+2023-06-21T12:00:43.294943+0300 INFO ['мяу', 'мяу', 'мяу']
+2023-06-21T12:00:43.294943+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу!
+2023-06-21T12:00:43.294943+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:00:43.294943+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу!
+2023-06-21T12:00:43.294943+0300 INFO Сформированное сообщение sentence: Мяу мяу мяу! Мяу мяу мяу мяу! 
+2023-06-21T12:00:43.295943+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу мяу мяу! Мяу мяу мяу мяу! 
+2023-06-21T12:00:43.295943+0300 INFO Получен объект метрики текста: <PyQt5.QtGui.QFontMetrics object at 0x0000023A85B4FBC0>
+2023-06-21T12:00:43.295943+0300 INFO Объект _elided создан: Мяу мяу мяу! Мяу мяу мяу мяу! 
+2023-06-21T12:00:44.773929+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x0000023A85BBC430>> использован
+2023-06-21T12:00:44.774783+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:00:44.774783+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу мяу?
+2023-06-21T12:00:44.774783+0300 INFO Сформированное сообщение sentence: Мяу мяу мяу мяу мяу мяу?
+2023-06-21T12:00:44.774783+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу мяу мяу мяу мяу мяу?
+2023-06-21T12:00:44.774783+0300 INFO Получен объект метрики текста: <PyQt5.QtGui.QFontMetrics object at 0x0000023A85B4F920>
+2023-06-21T12:00:44.775784+0300 INFO Объект _elided создан: Мяу мяу мяу мяу мяу мяу?
+2023-06-21T12:00:45.941920+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x0000023A85BBC430>> использован
+2023-06-21T12:00:45.942923+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:00:45.942923+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу мяу!
+2023-06-21T12:00:45.942923+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:00:45.942923+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу мяу мяу мяу.
+2023-06-21T12:00:45.943923+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:00:45.943923+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу?
+2023-06-21T12:00:45.943923+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:00:45.943923+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу мяу?
+2023-06-21T12:00:45.943923+0300 INFO Сформированное сообщение sentence: Мяу мяу мяу мяу мяу мяу! Мяу мяу мяу мяу мяу мяу мяу мяу. Мяу мяу мяу мяу мяу? Мяу мяу мяу мяу мяу мяу? 
+2023-06-21T12:00:45.944923+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу мяу мяу мяу мяу мяу! Мяу мяу мяу мяу мяу мяу мяу мяу. Мяу мяу мяу мяу мяу? Мяу мяу мяу мяу мяу мяу? 
+2023-06-21T12:00:45.944923+0300 INFO Получен объект метрики текста: <PyQt5.QtGui.QFontMetrics object at 0x0000023A85B4FBC0>
+2023-06-21T12:00:45.944923+0300 INFO Объект _elided создан: Мяу мяу мяу мяу мяу мяу! Мяу мяу мяу мяу мяу мяу…
+2023-06-21T12:01:20.638218+0300 INFO Программа запускается
+2023-06-21T12:01:20.647221+0300 INFO Объектное окружение установлено: <Forms.TextForm.Ui_Form object at 0x000002E4C6107B20>
+2023-06-21T12:01:20.648221+0300 INFO Объект Sentence создан: <RandomMeovSentence.RandomSentence.Sentence object at 0x000002E4C60F4370>
+2023-06-21T12:01:20.902273+0300 INFO Программа запущена
+2023-06-21T12:01:22.038286+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000002E4C63A03A0>> использован
+2023-06-21T12:01:22.039288+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:01:22.039288+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу, мяу мяу мяу мяу мяу мяу!
+2023-06-21T12:01:22.039288+0300 INFO Сформированное сообщение sentence: Мяу мяу, мяу мяу мяу мяу мяу мяу! 
+2023-06-21T12:01:22.039288+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу мяу, мяу мяу мяу мяу мяу мяу! 
+2023-06-21T12:01:22.040288+0300 INFO Получен объект метрики текста: <PyQt5.QtGui.QFontMetrics object at 0x000002E4C63337D0>
+2023-06-21T12:01:22.041288+0300 INFO Объект _elided создан: Мяу мяу, мяу мяу мяу мяу мяу мяу! 
+2023-06-21T12:01:23.478254+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000002E4C63A03A0>> использован
+2023-06-21T12:01:23.478254+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:01:23.479266+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу - мяу мяу мяу мяу.
+2023-06-21T12:01:23.479266+0300 INFO Сформированное сообщение sentence: Мяу мяу - мяу мяу мяу мяу.
+2023-06-21T12:01:23.479266+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу мяу - мяу мяу мяу мяу.
+2023-06-21T12:01:23.479266+0300 INFO Получен объект метрики текста: <PyQt5.QtGui.QFontMetrics object at 0x000002E4C6333920>
+2023-06-21T12:01:23.479266+0300 INFO Объект _elided создан: Мяу мяу - мяу мяу мяу мяу.
+2023-06-21T12:01:24.678309+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000002E4C63A03A0>> использован
+2023-06-21T12:01:24.678309+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:01:24.678309+0300 INFO Сформированное сообщение random_moew_sentence: Мяу, мяу мяу мяу мяу - мяу мяу мяу мяу?
+2023-06-21T12:01:24.679318+0300 INFO Сформированное сообщение sentence: Мяу, мяу мяу мяу мяу - мяу мяу мяу мяу?
+2023-06-21T12:01:24.679318+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу, мяу мяу мяу мяу - мяу мяу мяу мяу?
+2023-06-21T12:01:24.679318+0300 INFO Получен объект метрики текста: <PyQt5.QtGui.QFontMetrics object at 0x000002E4C63337D0>
+2023-06-21T12:01:24.679318+0300 INFO Объект _elided создан: Мяу, мяу мяу мяу мяу - мяу мяу мяу мяу?
+2023-06-21T12:01:25.750492+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000002E4C63A03A0>> использован
+2023-06-21T12:01:25.750492+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:01:25.750492+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу мяу мяу мяу мяу.
+2023-06-21T12:01:25.751504+0300 INFO Сформированное сообщение sentence: Мяу мяу мяу мяу мяу мяу мяу мяу мяу. 
+2023-06-21T12:01:25.751504+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу мяу мяу мяу мяу мяу мяу мяу мяу. 
+2023-06-21T12:01:25.751504+0300 INFO Получен объект метрики текста: <PyQt5.QtGui.QFontMetrics object at 0x000002E4C6333920>
+2023-06-21T12:01:25.751504+0300 INFO Объект _elided создан: Мяу мяу мяу мяу мяу мяу мяу мяу мяу. 
+2023-06-21T12:01:26.950281+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000002E4C63A03A0>> использован
+2023-06-21T12:01:26.950281+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:01:26.950281+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу, мяу!
+2023-06-21T12:01:26.951282+0300 INFO Сформированное сообщение sentence: Мяу мяу мяу, мяу!
+2023-06-21T12:01:26.951282+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу мяу мяу, мяу!
+2023-06-21T12:01:26.951282+0300 INFO Получен объект метрики текста: <PyQt5.QtGui.QFontMetrics object at 0x000002E4C6333A00>
+2023-06-21T12:01:26.951282+0300 INFO Объект _elided создан: Мяу мяу мяу, мяу!
+2023-06-21T12:01:28.133888+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000002E4C63A03A0>> использован
+2023-06-21T12:01:28.134899+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:01:28.134899+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу?
+2023-06-21T12:01:28.134899+0300 INFO Сформированное сообщение sentence: Мяу мяу мяу мяу мяу? 
+2023-06-21T12:01:28.134899+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу мяу мяу мяу мяу? 
+2023-06-21T12:01:28.134899+0300 INFO Получен объект метрики текста: <PyQt5.QtGui.QFontMetrics object at 0x000002E4C6333A00>
+2023-06-21T12:01:28.135899+0300 INFO Объект _elided создан: Мяу мяу мяу мяу мяу? 
+2023-06-21T12:01:29.278310+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000002E4C63A03A0>> использован
+2023-06-21T12:01:29.278310+0300 INFO ['мяу', 'мяу', 'мяу']
+2023-06-21T12:01:29.278310+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу!
+2023-06-21T12:01:29.279322+0300 INFO Сформированное сообщение sentence: Мяу мяу мяу!
+2023-06-21T12:01:29.279322+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу мяу мяу!
+2023-06-21T12:01:29.279322+0300 INFO Получен объект метрики текста: <PyQt5.QtGui.QFontMetrics object at 0x000002E4C63337D0>
+2023-06-21T12:01:29.279322+0300 INFO Объект _elided создан: Мяу мяу мяу!
+2023-06-21T12:01:30.277886+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000002E4C63A03A0>> использован
+2023-06-21T12:01:30.277886+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:01:30.278898+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу?
+2023-06-21T12:01:30.278898+0300 INFO Сформированное сообщение sentence: Мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу?
+2023-06-21T12:01:30.278898+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу?
+2023-06-21T12:01:30.278898+0300 INFO Получен объект метрики текста: <PyQt5.QtGui.QFontMetrics object at 0x000002E4C63337D0>
+2023-06-21T12:01:30.278898+0300 INFO Объект _elided создан: Мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу?
+2023-06-21T12:01:31.453884+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000002E4C63A03A0>> использован
+2023-06-21T12:01:31.453884+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:01:31.454896+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу - мяу мяу мяу: мяу мяу!
+2023-06-21T12:01:31.454896+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:01:31.454896+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу!
+2023-06-21T12:01:31.454896+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:01:31.454896+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу: мяу мяу мяу.
+2023-06-21T12:01:31.455896+0300 INFO Сформированное сообщение sentence: Мяу мяу мяу мяу - мяу мяу мяу: мяу мяу! Мяу мяу мяу мяу мяу! Мяу мяу мяу: мяу мяу мяу. 
+2023-06-21T12:01:31.455896+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу мяу мяу мяу - мяу мяу мяу: мяу мяу! Мяу мяу мяу мяу мяу! Мяу мяу мяу: мяу мяу мяу. 
+2023-06-21T12:01:31.455896+0300 INFO Получен объект метрики текста: <PyQt5.QtGui.QFontMetrics object at 0x000002E4C6333A00>
+2023-06-21T12:01:31.456896+0300 INFO Объект _elided создан: Мяу мяу мяу мяу - мяу мяу мяу: мяу мяу! Мяу мяу м…
+2023-06-21T12:01:34.102299+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000002E4C63A03A0>> использован
+2023-06-21T12:01:34.102299+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:01:34.102299+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу.
+2023-06-21T12:01:34.103301+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:01:34.103301+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу мяу мяу мяу?
+2023-06-21T12:01:34.103301+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:01:34.103301+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу.
+2023-06-21T12:01:34.103301+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:01:34.104301+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу!
+2023-06-21T12:01:34.104301+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:01:34.104301+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу мяу мяу мяу.
+2023-06-21T12:01:34.104301+0300 INFO Сформированное сообщение sentence: Мяу мяу мяу мяу мяу. Мяу мяу мяу мяу мяу мяу мяу мяу? Мяу мяу мяу мяу. Мяу мяу мяу мяу! Мяу мяу мяу мяу мяу мяу мяу мяу. 
+2023-06-21T12:01:34.104301+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу мяу мяу мяу мяу. Мяу мяу мяу мяу мяу мяу мяу мяу? Мяу мяу мяу мяу. Мяу мяу мяу мяу! Мяу мяу мяу мяу мяу мяу мяу мяу. 
+2023-06-21T12:01:34.105301+0300 INFO Получен объект метрики текста: <PyQt5.QtGui.QFontMetrics object at 0x000002E4C6333920>
+2023-06-21T12:01:34.105301+0300 INFO Объект _elided создан: Мяу мяу мяу мяу мяу. Мяу мяу мяу мяу мяу мяу мяу…
+2023-06-21T12:01:35.590479+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000002E4C63A03A0>> использован
+2023-06-21T12:01:35.590479+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:01:35.590479+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу мяу, мяу мяу мяу мяу!
+2023-06-21T12:01:35.590479+0300 INFO Сформированное сообщение sentence: Мяу мяу мяу мяу мяу мяу, мяу мяу мяу мяу!
+2023-06-21T12:01:35.591491+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу мяу мяу мяу мяу мяу, мяу мяу мяу мяу!
+2023-06-21T12:01:35.591491+0300 INFO Получен объект метрики текста: <PyQt5.QtGui.QFontMetrics object at 0x000002E4C63337D0>
+2023-06-21T12:01:35.591491+0300 INFO Объект _elided создан: Мяу мяу мяу мяу мяу мяу, мяу мяу мяу мяу!
+2023-06-21T12:01:36.613880+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000002E4C63A03A0>> использован
+2023-06-21T12:01:36.614892+0300 INFO ['мяу', 'мяу', 'мяу']
+2023-06-21T12:01:36.614892+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу.
+2023-06-21T12:01:36.614892+0300 INFO Сформированное сообщение sentence: Мяу мяу мяу.
+2023-06-21T12:01:36.614892+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу мяу мяу.
+2023-06-21T12:01:36.614892+0300 INFO Получен объект метрики текста: <PyQt5.QtGui.QFontMetrics object at 0x000002E4C6333A00>
+2023-06-21T12:01:36.615892+0300 INFO Объект _elided создан: Мяу мяу мяу.
+2023-06-21T12:01:37.654288+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000002E4C63A03A0>> использован
+2023-06-21T12:01:37.654288+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:01:37.654288+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу?
+2023-06-21T12:01:37.655288+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:01:37.655288+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу!
+2023-06-21T12:01:37.655288+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:01:37.655288+0300 INFO Сформированное сообщение random_moew_sentence: Мяу🙀 мяу мяу мяу мяу - мяу мяу?
+2023-06-21T12:01:37.655288+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:01:37.656288+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу: мяу мяу мяу мяу мяу.
+2023-06-21T12:01:37.656288+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:01:37.656288+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу мяу мяу мяу: мяу мяу!
+2023-06-21T12:01:37.656288+0300 INFO Сформированное сообщение sentence: Мяу мяу мяу мяу? Мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу! Мяу🙀 мяу мяу мяу мяу - мяу мяу? Мяу мяу мяу мяу: мяу мяу мяу мяу мяу. Мяу мяу мяу мяу мяу мяу мяу мяу: мяу мяу! 
+2023-06-21T12:01:37.656288+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу мяу мяу мяу? Мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу! Мяу🙀 мяу мяу мяу мяу - мяу мяу? Мяу мяу мяу мяу: мяу мяу мяу мяу мяу. Мяу мяу мяу мяу мяу мяу мяу мяу: мяу мяу! 
+2023-06-21T12:01:37.657289+0300 INFO Получен объект метрики текста: <PyQt5.QtGui.QFontMetrics object at 0x000002E4C63337D0>
+2023-06-21T12:01:37.663290+0300 INFO Объект _elided создан: Мяу мяу мяу мяу? Мяу мяу мяу мяу мяу мяу мяу мяу…
+2023-06-21T12:01:40.157876+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000002E4C63A03A0>> использован
+2023-06-21T12:01:40.158888+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:01:40.158888+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу мяу?
+2023-06-21T12:01:40.158888+0300 INFO Сформированное сообщение sentence: Мяу мяу мяу мяу мяу мяу? 
+2023-06-21T12:01:40.158888+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу мяу мяу мяу мяу мяу? 
+2023-06-21T12:01:40.159887+0300 INFO Получен объект метрики текста: <PyQt5.QtGui.QFontMetrics object at 0x000002E4C6333A00>
+2023-06-21T12:01:40.159887+0300 INFO Объект _elided создан: Мяу мяу мяу мяу мяу мяу? 
+2023-06-21T12:01:41.509876+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000002E4C63A03A0>> использован
+2023-06-21T12:01:41.510881+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:01:41.510881+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу мяу мяу мяу!
+2023-06-21T12:01:41.510881+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:01:41.510881+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу, мяу.
+2023-06-21T12:01:41.510881+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:01:41.510881+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу😺, мяу мяу?
+2023-06-21T12:01:41.511883+0300 INFO ['мяу', 'мяу', 'мяу']
+2023-06-21T12:01:41.511883+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу.
+2023-06-21T12:01:41.511883+0300 INFO Сформированное сообщение sentence: Мяу мяу мяу мяу мяу мяу мяу мяу! Мяу мяу мяу мяу мяу, мяу. Мяу мяу😺, мяу мяу? Мяу мяу мяу. 
+2023-06-21T12:01:41.511883+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу мяу мяу мяу мяу мяу мяу мяу! Мяу мяу мяу мяу мяу, мяу. Мяу мяу😺, мяу мяу? Мяу мяу мяу. 
+2023-06-21T12:01:41.511883+0300 INFO Получен объект метрики текста: <PyQt5.QtGui.QFontMetrics object at 0x000002E4C6333A00>
+2023-06-21T12:01:41.512883+0300 INFO Объект _elided создан: Мяу мяу мяу мяу мяу мяу мяу мяу! Мяу мяу мяу мяу…
+2023-06-21T12:01:42.902234+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000002E4C63A03A0>> использован
+2023-06-21T12:01:42.902234+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:01:42.902234+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу мяу мяу😿 мяу?
+2023-06-21T12:01:42.903234+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:01:42.903234+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу!
+2023-06-21T12:01:42.903234+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:01:42.903234+0300 INFO Сформированное сообщение random_moew_sentence: Мяу - мяу мяу мяу мяу мяу мяу мяу мяу мяу?
+2023-06-21T12:01:42.903234+0300 INFO Сформированное сообщение sentence: Мяу мяу мяу мяу мяу мяу мяу😿 мяу? Мяу мяу мяу мяу! Мяу - мяу мяу мяу мяу мяу мяу мяу мяу мяу? 
+2023-06-21T12:01:42.904235+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу мяу мяу мяу мяу мяу мяу😿 мяу? Мяу мяу мяу мяу! Мяу - мяу мяу мяу мяу мяу мяу мяу мяу мяу? 
+2023-06-21T12:01:42.904235+0300 INFO Получен объект метрики текста: <PyQt5.QtGui.QFontMetrics object at 0x000002E4C6333A00>
+2023-06-21T12:01:42.904235+0300 INFO Объект _elided создан: Мяу мяу мяу мяу мяу мяу мяу😿 мяу? Мяу мяу мяу …
+2023-06-21T12:01:45.349872+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000002E4C63A03A0>> использован
+2023-06-21T12:01:45.349872+0300 INFO ['мяу', 'мяу', 'мяу']
+2023-06-21T12:01:45.350883+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу - мяу!
+2023-06-21T12:01:45.350883+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:01:45.350883+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу!
+2023-06-21T12:01:45.350883+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:01:45.351884+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу: мяу мяу мяу мяу мяу мяу мяу!
+2023-06-21T12:01:45.351884+0300 INFO Сформированное сообщение sentence: Мяу мяу - мяу! Мяу мяу мяу мяу мяу! Мяу мяу мяу: мяу мяу мяу мяу мяу мяу мяу! 
+2023-06-21T12:01:45.351884+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу мяу - мяу! Мяу мяу мяу мяу мяу! Мяу мяу мяу: мяу мяу мяу мяу мяу мяу мяу! 
+2023-06-21T12:01:45.351884+0300 INFO Получен объект метрики текста: <PyQt5.QtGui.QFontMetrics object at 0x000002E4C6333A00>
+2023-06-21T12:01:45.351884+0300 INFO Объект _elided создан: Мяу мяу - мяу! Мяу мяу мяу мяу мяу! Мяу мяу мяу: …
+2023-06-21T12:01:46.726261+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000002E4C63A03A0>> использован
+2023-06-21T12:01:46.726261+0300 INFO ['мяу', 'мяу', 'мяу']
+2023-06-21T12:01:46.726261+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу.
+2023-06-21T12:01:46.727261+0300 INFO Сформированное сообщение sentence: Мяу мяу мяу.
+2023-06-21T12:01:46.727261+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу мяу мяу.
+2023-06-21T12:01:46.727261+0300 INFO Получен объект метрики текста: <PyQt5.QtGui.QFontMetrics object at 0x000002E4C6333920>
+2023-06-21T12:01:46.727261+0300 INFO Объект _elided создан: Мяу мяу мяу.
+2023-06-21T12:01:47.813870+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000002E4C63A03A0>> использован
+2023-06-21T12:01:47.813870+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:01:47.814881+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу😼 мяу мяу мяу мяу мяу мяу мяу.
+2023-06-21T12:01:47.814881+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:01:47.814881+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу?
+2023-06-21T12:01:47.814881+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:01:47.815881+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу мяу мяу мяу мяу?
+2023-06-21T12:01:47.815881+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:01:47.815881+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу мяу мяу мяу мяу?
+2023-06-21T12:01:47.815881+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:01:47.815881+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу, мяу!
+2023-06-21T12:01:47.816882+0300 INFO Сформированное сообщение sentence: Мяу мяу мяу😼 мяу мяу мяу мяу мяу мяу мяу. Мяу мяу мяу мяу? Мяу мяу мяу мяу мяу мяу мяу мяу мяу? Мяу мяу мяу мяу мяу мяу мяу мяу мяу? Мяу мяу мяу, мяу! 
+2023-06-21T12:01:47.816882+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу мяу мяу😼 мяу мяу мяу мяу мяу мяу мяу. Мяу мяу мяу мяу? Мяу мяу мяу мяу мяу мяу мяу мяу мяу? Мяу мяу мяу мяу мяу мяу мяу мяу мяу? Мяу мяу мяу, мяу! 
+2023-06-21T12:01:47.816882+0300 INFO Получен объект метрики текста: <PyQt5.QtGui.QFontMetrics object at 0x000002E4C63337D0>
+2023-06-21T12:01:47.816882+0300 INFO Объект _elided создан: Мяу мяу мяу😼 мяу мяу мяу мяу мяу мяу мяу. Мяу …
+2023-06-21T12:01:50.542438+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000002E4C63A03A0>> использован
+2023-06-21T12:01:50.542438+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:01:50.542438+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу?
+2023-06-21T12:01:50.542438+0300 INFO Сформированное сообщение sentence: Мяу мяу мяу мяу мяу?
+2023-06-21T12:01:50.543439+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу мяу мяу мяу мяу?
+2023-06-21T12:01:50.543439+0300 INFO Получен объект метрики текста: <PyQt5.QtGui.QFontMetrics object at 0x000002E4C6333920>
+2023-06-21T12:01:50.543439+0300 INFO Объект _elided создан: Мяу мяу мяу мяу мяу?
+2023-06-21T12:01:51.870263+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000002E4C63A03A0>> использован
+2023-06-21T12:01:51.870263+0300 INFO Сформированное сообщение sentence: 
+2023-06-21T12:01:51.870263+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: 
+2023-06-21T12:01:51.870263+0300 INFO Получен объект метрики текста: <PyQt5.QtGui.QFontMetrics object at 0x000002E4C63337D0>
+2023-06-21T12:01:51.871263+0300 INFO Объект _elided создан: 
+2023-06-21T12:01:57.966269+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000002E4C63A03A0>> использован
+2023-06-21T12:01:57.966269+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:01:57.966269+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу.
+2023-06-21T12:01:57.967269+0300 INFO Сформированное сообщение sentence: Мяу мяу мяу мяу.
+2023-06-21T12:01:57.967269+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу мяу мяу мяу.
+2023-06-21T12:01:57.967269+0300 INFO Получен объект метрики текста: <PyQt5.QtGui.QFontMetrics object at 0x000002E4C6333A00>
+2023-06-21T12:01:57.967269+0300 INFO Объект _elided создан: Мяу мяу мяу мяу.
+2023-06-21T12:01:59.166374+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000002E4C63A03A0>> использован
+2023-06-21T12:01:59.166374+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:01:59.166374+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу мяу мяу.
+2023-06-21T12:01:59.166374+0300 INFO ['мяу', 'мяу', 'мяу']
+2023-06-21T12:01:59.167374+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу?
+2023-06-21T12:01:59.167374+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:01:59.167374+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу - мяу мяу мяу мяу - мяу.
+2023-06-21T12:01:59.167374+0300 INFO Сформированное сообщение sentence: Мяу мяу мяу мяу мяу мяу мяу. Мяу мяу мяу? Мяу мяу мяу - мяу мяу мяу мяу - мяу. 
+2023-06-21T12:01:59.167374+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу мяу мяу мяу мяу мяу мяу. Мяу мяу мяу? Мяу мяу мяу - мяу мяу мяу мяу - мяу. 
+2023-06-21T12:01:59.168374+0300 INFO Получен объект метрики текста: <PyQt5.QtGui.QFontMetrics object at 0x000002E4C63337D0>
+2023-06-21T12:01:59.168374+0300 INFO Объект _elided создан: Мяу мяу мяу мяу мяу мяу мяу. Мяу мяу мяу? Мяу мя…
+2023-06-21T12:02:01.245857+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000002E4C63A03A0>> использован
+2023-06-21T12:02:01.246685+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:02:01.246685+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу - мяу!
+2023-06-21T12:02:01.246685+0300 INFO Сформированное сообщение sentence: Мяу мяу мяу - мяу!
+2023-06-21T12:02:01.246685+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу мяу мяу - мяу!
+2023-06-21T12:02:01.247697+0300 INFO Получен объект метрики текста: <PyQt5.QtGui.QFontMetrics object at 0x000002E4C6333920>
+2023-06-21T12:02:01.247697+0300 INFO Объект _elided создан: Мяу мяу мяу - мяу!
+2023-06-21T12:02:02.214315+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000002E4C63A03A0>> использован
+2023-06-21T12:02:02.214315+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:02:02.214315+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу мяу мяу мяу!
+2023-06-21T12:02:02.214315+0300 INFO Сформированное сообщение sentence: Мяу мяу мяу мяу мяу мяу мяу мяу!
+2023-06-21T12:02:02.215315+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу мяу мяу мяу мяу мяу мяу мяу!
+2023-06-21T12:02:02.215315+0300 INFO Получен объект метрики текста: <PyQt5.QtGui.QFontMetrics object at 0x000002E4C6333920>
+2023-06-21T12:02:02.215315+0300 INFO Объект _elided создан: Мяу мяу мяу мяу мяу мяу мяу мяу!
+2023-06-21T12:02:03.109855+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000002E4C63A03A0>> использован
+2023-06-21T12:02:03.110866+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:02:03.110866+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу.
+2023-06-21T12:02:03.110866+0300 INFO Сформированное сообщение sentence: Мяу мяу мяу мяу мяу.
+2023-06-21T12:02:03.110866+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу мяу мяу мяу мяу.
+2023-06-21T12:02:03.110866+0300 INFO Получен объект метрики текста: <PyQt5.QtGui.QFontMetrics object at 0x000002E4C63337D0>
+2023-06-21T12:02:03.110866+0300 INFO Объект _elided создан: Мяу мяу мяу мяу мяу.
+2023-06-21T12:02:04.390385+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000002E4C63A03A0>> использован
+2023-06-21T12:02:04.390385+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:02:04.390385+0300 INFO Сформированное сообщение random_moew_sentence: Мяу - мяу мяу мяу мяу?
+2023-06-21T12:02:04.390385+0300 INFO Сформированное сообщение sentence: Мяу - мяу мяу мяу мяу?
+2023-06-21T12:02:04.391385+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу - мяу мяу мяу мяу?
+2023-06-21T12:02:04.391385+0300 INFO Получен объект метрики текста: <PyQt5.QtGui.QFontMetrics object at 0x000002E4C6333920>
+2023-06-21T12:02:04.391385+0300 INFO Объект _elided создан: Мяу - мяу мяу мяу мяу?
+2023-06-21T12:02:05.302144+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000002E4C63A03A0>> использован
+2023-06-21T12:02:05.302144+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:02:05.302144+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу мяу мяу - мяу мяу мяу.
+2023-06-21T12:02:05.303145+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:02:05.303145+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу мяу?
+2023-06-21T12:02:05.303145+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:02:05.303145+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу.
+2023-06-21T12:02:05.303145+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:02:05.304145+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу мяу мяу.
+2023-06-21T12:02:05.304145+0300 INFO Сформированное сообщение sentence: Мяу мяу мяу мяу мяу мяу мяу - мяу мяу мяу. Мяу мяу мяу мяу мяу мяу? Мяу мяу мяу мяу. Мяу мяу мяу мяу мяу мяу мяу. 
+2023-06-21T12:02:05.304145+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу мяу мяу мяу мяу мяу мяу - мяу мяу мяу. Мяу мяу мяу мяу мяу мяу? Мяу мяу мяу мяу. Мяу мяу мяу мяу мяу мяу мяу. 
+2023-06-21T12:02:05.304145+0300 INFO Получен объект метрики текста: <PyQt5.QtGui.QFontMetrics object at 0x000002E4C6333920>
+2023-06-21T12:02:05.305145+0300 INFO Объект _elided создан: Мяу мяу мяу мяу мяу мяу мяу - мяу мяу мяу. Мяу мя…
+2023-06-21T12:06:46.154401+0300 INFO Программа запускается
+2023-06-21T12:06:46.163402+0300 INFO Объектное окружение установлено: <Forms.TextForm.Ui_Form object at 0x00000241AA7D44F0>
+2023-06-21T12:06:46.163402+0300 INFO Объект Sentence создан: <RandomMeovSentence.RandomSentence.Sentence object at 0x00000241AA7E0370>
+2023-06-21T12:06:46.418460+0300 INFO Программа запущена
+2023-06-21T12:07:11.770967+0300 INFO Программа запускается
+2023-06-21T12:07:11.779969+0300 INFO Объектное окружение установлено: <Forms.TextForm.Ui_Form object at 0x000001F415F2FB20>
+2023-06-21T12:07:11.779969+0300 INFO Объект Sentence создан: <RandomMeovSentence.RandomSentence.Sentence object at 0x000001F415F14370>
+2023-06-21T12:07:12.042343+0300 INFO Программа запущена
+2023-06-21T12:07:13.781988+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000001F4161C03A0>> использован
+2023-06-21T12:07:13.781988+0300 INFO Сформированное сообщение sentence: 
+2023-06-21T12:07:13.781988+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: 
+2023-06-21T12:07:13.782988+0300 INFO Получен объект метрики текста: <PyQt5.QtGui.QFontMetrics object at 0x000001F41614F920>
+2023-06-21T12:07:13.783988+0300 INFO Объект _elided создан: 
+2023-06-21T12:07:14.893967+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000001F4161C03A0>> использован
+2023-06-21T12:07:14.893967+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:07:14.894967+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу - мяу мяу мяу мяу мяу мяу мяу.
+2023-06-21T12:07:14.894967+0300 INFO Сформированное сообщение sentence: Мяу мяу мяу - мяу мяу мяу мяу мяу мяу мяу.
+2023-06-21T12:07:14.894967+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу мяу мяу - мяу мяу мяу мяу мяу мяу мяу.
+2023-06-21T12:07:14.894967+0300 INFO Получен объект метрики текста: <PyQt5.QtGui.QFontMetrics object at 0x000001F41614F7D0>
+2023-06-21T12:07:14.894967+0300 INFO Объект _elided создан: Мяу мяу мяу - мяу мяу мяу мяу мяу мяу мяу.
+2023-06-21T12:07:15.901988+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000001F4161C03A0>> использован
+2023-06-21T12:07:15.901988+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:07:15.901988+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу - мяу мяу!
+2023-06-21T12:07:15.901988+0300 INFO Сформированное сообщение sentence: Мяу мяу мяу мяу - мяу мяу!
+2023-06-21T12:07:15.902988+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу мяу мяу мяу - мяу мяу!
+2023-06-21T12:07:15.902988+0300 INFO Получен объект метрики текста: <PyQt5.QtGui.QFontMetrics object at 0x000001F41614F920>
+2023-06-21T12:07:15.902988+0300 INFO Объект _elided создан: Мяу мяу мяу мяу - мяу мяу!
+2023-06-21T12:07:16.925965+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000001F4161C03A0>> использован
+2023-06-21T12:07:16.925965+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:07:16.925965+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу!
+2023-06-21T12:07:16.926965+0300 INFO ['мяу', 'мяу', 'мяу']
+2023-06-21T12:07:16.926965+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу.
+2023-06-21T12:07:16.926965+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:07:16.926965+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу, мяу мяу мяу мяу мяу мяу!
+2023-06-21T12:07:16.926965+0300 INFO Сформированное сообщение sentence: Мяу мяу мяу мяу! Мяу мяу мяу. Мяу мяу мяу, мяу мяу мяу мяу мяу мяу! 
+2023-06-21T12:07:16.927965+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу мяу мяу мяу! Мяу мяу мяу. Мяу мяу мяу, мяу мяу мяу мяу мяу мяу! 
+2023-06-21T12:07:16.927965+0300 INFO Получен объект метрики текста: <PyQt5.QtGui.QFontMetrics object at 0x000001F41614FA00>
+2023-06-21T12:07:16.928965+0300 INFO Объект _elided создан: Мяу мяу мяу мяу! Мяу мяу мяу. Мяу мяу мяу, мяу м…
+2023-06-21T12:07:19.253955+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000001F4161C03A0>> использован
+2023-06-21T12:07:19.253955+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:07:19.254954+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу, мяу мяу мяу мяу мяу?
+2023-06-21T12:07:19.254954+0300 INFO Сформированное сообщение sentence: Мяу мяу, мяу мяу мяу мяу мяу?
+2023-06-21T12:07:19.254954+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу мяу, мяу мяу мяу мяу мяу?
+2023-06-21T12:07:19.254954+0300 INFO Получен объект метрики текста: <PyQt5.QtGui.QFontMetrics object at 0x000001F41614F7D0>
+2023-06-21T12:07:19.255955+0300 INFO Объект _elided создан: Мяу мяу, мяу мяу мяу мяу мяу?
+2023-06-21T12:07:20.213962+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000001F4161C03A0>> использован
+2023-06-21T12:07:20.213962+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:07:20.213962+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу.
+2023-06-21T12:07:20.214963+0300 INFO Сформированное сообщение sentence: Мяу мяу мяу мяу.
+2023-06-21T12:07:20.214963+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу мяу мяу мяу.
+2023-06-21T12:07:20.214963+0300 INFO Получен объект метрики текста: <PyQt5.QtGui.QFontMetrics object at 0x000001F41614F920>
+2023-06-21T12:07:20.214963+0300 INFO Объект _elided создан: Мяу мяу мяу мяу.
+2023-06-21T12:07:21.349201+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000001F4161C03A0>> использован
+2023-06-21T12:07:21.350201+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:07:21.350201+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу мяу мяу?
+2023-06-21T12:07:21.350201+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:07:21.350201+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу?
+2023-06-21T12:07:21.351202+0300 INFO Сформированное сообщение sentence: Мяу мяу мяу мяу мяу мяу мяу? Мяу мяу мяу мяу мяу? 
+2023-06-21T12:07:21.351202+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу мяу мяу мяу мяу мяу мяу? Мяу мяу мяу мяу мяу? 
+2023-06-21T12:07:21.351202+0300 INFO Получен объект метрики текста: <PyQt5.QtGui.QFontMetrics object at 0x000001F41614F920>
+2023-06-21T12:07:21.351202+0300 INFO Объект _elided создан: Мяу мяу мяу мяу мяу мяу мяу? Мяу мяу мяу мяу мяу? 
+2023-06-21T12:07:22.533968+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000001F4161C03A0>> использован
+2023-06-21T12:07:22.533968+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:07:22.533968+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу мяу мяу!
+2023-06-21T12:07:22.533968+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:07:22.534968+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу?
+2023-06-21T12:07:22.534968+0300 INFO Сформированное сообщение sentence: Мяу мяу мяу мяу мяу мяу мяу! Мяу мяу мяу мяу мяу? 
+2023-06-21T12:07:22.534968+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу мяу мяу мяу мяу мяу мяу! Мяу мяу мяу мяу мяу? 
+2023-06-21T12:07:22.534968+0300 INFO Получен объект метрики текста: <PyQt5.QtGui.QFontMetrics object at 0x000001F41614F7D0>
+2023-06-21T12:07:22.534968+0300 INFO Объект _elided создан: Мяу мяу мяу мяу мяу мяу мяу! Мяу мяу мяу мяу мяу? 
+2023-06-21T12:07:23.589959+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000001F4161C03A0>> использован
+2023-06-21T12:07:23.589959+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:07:23.589959+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу😾 мяу мяу мяу мяу мяу мяу мяу.
+2023-06-21T12:07:23.589959+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:07:23.590960+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу!
+2023-06-21T12:07:23.590960+0300 INFO Сформированное сообщение sentence: Мяу мяу😾 мяу мяу мяу мяу мяу мяу мяу. Мяу мяу мяу мяу! 
+2023-06-21T12:07:23.590960+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу мяу😾 мяу мяу мяу мяу мяу мяу мяу. Мяу мяу мяу мяу! 
+2023-06-21T12:07:23.590960+0300 INFO Получен объект метрики текста: <PyQt5.QtGui.QFontMetrics object at 0x000001F41614F7D0>
+2023-06-21T12:07:23.592960+0300 INFO Объект _elided создан: Мяу мяу😾 мяу мяу мяу мяу мяу мяу мяу. Мяу мяу …
+2023-06-21T12:07:25.837956+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000001F4161C03A0>> использован
+2023-06-21T12:07:25.837956+0300 INFO ['мяу', 'мяу', 'мяу']
+2023-06-21T12:07:25.837956+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу?
+2023-06-21T12:07:25.838956+0300 INFO Сформированное сообщение sentence: Мяу мяу мяу?
+2023-06-21T12:07:25.838956+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу мяу мяу?
+2023-06-21T12:07:25.838956+0300 INFO Получен объект метрики текста: <PyQt5.QtGui.QFontMetrics object at 0x000001F41614FA00>
+2023-06-21T12:07:25.838956+0300 INFO Объект _elided создан: Мяу мяу мяу?
+2023-06-21T12:07:26.853993+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000001F4161C03A0>> использован
+2023-06-21T12:07:26.853993+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:07:26.854957+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу!
+2023-06-21T12:07:26.854957+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:07:26.854957+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу.
+2023-06-21T12:07:26.854957+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:07:26.854957+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу мяу мяу: мяу!
+2023-06-21T12:07:26.854957+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:07:26.855956+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу мяу мяу!
+2023-06-21T12:07:26.855956+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:07:26.855956+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу.
+2023-06-21T12:07:26.855956+0300 INFO Сформированное сообщение sentence: Мяу мяу мяу мяу мяу! Мяу мяу мяу мяу мяу. Мяу мяу мяу мяу мяу мяу мяу: мяу! Мяу мяу мяу мяу мяу мяу мяу! Мяу мяу мяу мяу. 
+2023-06-21T12:07:26.855956+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу мяу мяу мяу мяу! Мяу мяу мяу мяу мяу. Мяу мяу мяу мяу мяу мяу мяу: мяу! Мяу мяу мяу мяу мяу мяу мяу! Мяу мяу мяу мяу. 
+2023-06-21T12:07:26.856956+0300 INFO Получен объект метрики текста: <PyQt5.QtGui.QFontMetrics object at 0x000001F41614F7D0>
+2023-06-21T12:07:26.856956+0300 INFO Объект _elided создан: Мяу мяу мяу мяу мяу! Мяу мяу мяу мяу мяу. Мяу мя…
+2023-06-21T12:07:28.581931+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000001F4161C03A0>> использован
+2023-06-21T12:07:28.581931+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:07:28.581931+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу мяу.
+2023-06-21T12:07:28.582930+0300 INFO ['мяу', 'мяу', 'мяу']
+2023-06-21T12:07:28.582930+0300 INFO Сформированное сообщение random_moew_sentence: Мяу, мяу мяу.
+2023-06-21T12:07:28.582930+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:07:28.582930+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу мяу мяу мяу.
+2023-06-21T12:07:28.582930+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:07:28.583930+0300 INFO Сформированное сообщение random_moew_sentence: Мяу, мяу мяу мяу мяу мяу?
+2023-06-21T12:07:28.583930+0300 INFO Сформированное сообщение sentence: Мяу мяу мяу мяу мяу мяу. Мяу, мяу мяу. Мяу мяу мяу мяу мяу мяу мяу мяу. Мяу, мяу мяу мяу мяу мяу? 
+2023-06-21T12:07:28.583930+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу мяу мяу мяу мяу мяу. Мяу, мяу мяу. Мяу мяу мяу мяу мяу мяу мяу мяу. Мяу, мяу мяу мяу мяу мяу? 
+2023-06-21T12:07:28.583930+0300 INFO Получен объект метрики текста: <PyQt5.QtGui.QFontMetrics object at 0x000001F41614F7D0>
+2023-06-21T12:07:28.583930+0300 INFO Объект _elided создан: Мяу мяу мяу мяу мяу мяу. Мяу, мяу мяу. Мяу мяу м…
+2023-06-21T12:07:30.189937+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000001F4161C03A0>> использован
+2023-06-21T12:07:30.189937+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:07:30.189937+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу, мяу мяу.
+2023-06-21T12:07:30.189937+0300 INFO Сформированное сообщение sentence: Мяу мяу, мяу мяу.
+2023-06-21T12:07:30.190937+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу мяу, мяу мяу.
+2023-06-21T12:07:30.190937+0300 INFO Получен объект метрики текста: <PyQt5.QtGui.QFontMetrics object at 0x000001F41614F920>
+2023-06-21T12:07:30.190937+0300 INFO Объект _elided создан: Мяу мяу, мяу мяу.
+2023-06-21T12:07:31.669986+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000001F4161C03A0>> использован
+2023-06-21T12:07:31.669986+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:07:31.669986+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу мяу мяу, мяу мяу.
+2023-06-21T12:07:31.670987+0300 INFO Сформированное сообщение sentence: Мяу мяу мяу мяу мяу мяу мяу, мяу мяу.
+2023-06-21T12:07:31.670987+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу мяу мяу мяу мяу мяу мяу, мяу мяу.
+2023-06-21T12:07:31.670987+0300 INFO Получен объект метрики текста: <PyQt5.QtGui.QFontMetrics object at 0x000001F41614F920>
+2023-06-21T12:07:31.670987+0300 INFO Объект _elided создан: Мяу мяу мяу мяу мяу мяу мяу, мяу мяу.
+2023-06-21T12:07:32.989934+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000001F4161C03A0>> использован
+2023-06-21T12:07:32.989934+0300 INFO Сформированное сообщение sentence: 
+2023-06-21T12:07:32.990935+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: 
+2023-06-21T12:07:32.990935+0300 INFO Получен объект метрики текста: <PyQt5.QtGui.QFontMetrics object at 0x000001F41614F7D0>
+2023-06-21T12:07:32.990935+0300 INFO Объект _elided создан: 
+2023-06-21T12:07:34.501961+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000001F4161C03A0>> использован
+2023-06-21T12:07:34.501961+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:07:34.501961+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу.
+2023-06-21T12:07:34.502961+0300 INFO Сформированное сообщение sentence: Мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу.
+2023-06-21T12:07:34.502961+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу.
+2023-06-21T12:07:34.502961+0300 INFO Получен объект метрики текста: <PyQt5.QtGui.QFontMetrics object at 0x000001F41614F920>
+2023-06-21T12:07:34.503953+0300 INFO Объект _elided создан: Мяу мяу мяу мяу мяу мяу мяу мяу мяу мяу.
+2023-06-21T12:07:36.661930+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000001F4161C03A0>> использован
+2023-06-21T12:07:36.661930+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:07:36.661930+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу мяу мяу.
+2023-06-21T12:07:36.662930+0300 INFO Сформированное сообщение sentence: Мяу мяу мяу мяу мяу мяу мяу.
+2023-06-21T12:07:36.662930+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу мяу мяу мяу мяу мяу мяу.
+2023-06-21T12:07:36.662930+0300 INFO Получен объект метрики текста: <PyQt5.QtGui.QFontMetrics object at 0x000001F41614F7D0>
+2023-06-21T12:07:36.662930+0300 INFO Объект _elided создан: Мяу мяу мяу мяу мяу мяу мяу.
+2023-06-21T12:07:37.949935+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000001F4161C03A0>> использован
+2023-06-21T12:07:37.949935+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:07:37.949935+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу!
+2023-06-21T12:07:37.950936+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:07:37.950936+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу мяу?
+2023-06-21T12:07:37.950936+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:07:37.950936+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу😺 мяу мяу мяу, мяу мяу?
+2023-06-21T12:07:37.950936+0300 INFO Сформированное сообщение sentence: Мяу мяу мяу мяу! Мяу мяу мяу мяу мяу мяу? Мяу мяу мяу😺 мяу мяу мяу, мяу мяу? 
+2023-06-21T12:07:37.950936+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу мяу мяу мяу! Мяу мяу мяу мяу мяу мяу? Мяу мяу мяу😺 мяу мяу мяу, мяу мяу? 
+2023-06-21T12:07:37.951936+0300 INFO Получен объект метрики текста: <PyQt5.QtGui.QFontMetrics object at 0x000001F41614F7D0>
+2023-06-21T12:07:37.951936+0300 INFO Объект _elided создан: Мяу мяу мяу мяу! Мяу мяу мяу мяу мяу мяу? Мяу мя…
+2023-06-21T12:07:39.509958+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000001F4161C03A0>> использован
+2023-06-21T12:07:39.509958+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:07:39.509958+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу - мяу.
+2023-06-21T12:07:39.510959+0300 INFO Сформированное сообщение sentence: Мяу мяу мяу - мяу.
+2023-06-21T12:07:39.510959+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу мяу мяу - мяу.
+2023-06-21T12:07:39.510959+0300 INFO Получен объект метрики текста: <PyQt5.QtGui.QFontMetrics object at 0x000001F41614FA00>
+2023-06-21T12:07:39.510959+0300 INFO Объект _elided создан: Мяу мяу мяу - мяу.
+2023-06-21T12:07:40.989647+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000001F4161C03A0>> использован
+2023-06-21T12:07:40.989647+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:07:40.990648+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу: мяу мяу мяу!
+2023-06-21T12:07:40.990648+0300 INFO Сформированное сообщение sentence: Мяу мяу мяу: мяу мяу мяу! 
+2023-06-21T12:07:40.990648+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу мяу мяу: мяу мяу мяу! 
+2023-06-21T12:07:40.990648+0300 INFO Получен объект метрики текста: <PyQt5.QtGui.QFontMetrics object at 0x000001F41614FA00>
+2023-06-21T12:07:40.990648+0300 INFO Объект _elided создан: Мяу мяу мяу: мяу мяу мяу! 
+2023-06-21T12:07:42.037947+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000001F4161C03A0>> использован
+2023-06-21T12:07:42.037947+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:07:42.037947+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу мяу мяу - мяу мяу мяу.
+2023-06-21T12:07:42.038947+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:07:42.038947+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу - мяу мяу!
+2023-06-21T12:07:42.038947+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:07:42.038947+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу мяу?
+2023-06-21T12:07:42.038947+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:07:42.038947+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу - мяу мяу?
+2023-06-21T12:07:42.039947+0300 INFO Сформированное сообщение sentence: Мяу мяу мяу мяу мяу мяу мяу - мяу мяу мяу. Мяу мяу мяу - мяу мяу! Мяу мяу мяу мяу мяу мяу? Мяу мяу мяу - мяу мяу? 
+2023-06-21T12:07:42.039947+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу мяу мяу мяу мяу мяу мяу - мяу мяу мяу. Мяу мяу мяу - мяу мяу! Мяу мяу мяу мяу мяу мяу? Мяу мяу мяу - мяу мяу? 
+2023-06-21T12:07:42.039947+0300 INFO Получен объект метрики текста: <PyQt5.QtGui.QFontMetrics object at 0x000001F41614F7D0>
+2023-06-21T12:07:42.039947+0300 INFO Объект _elided создан: Мяу мяу мяу мяу мяу мяу мяу - мяу мяу мяу. Мяу мя…
+2023-06-21T12:07:43.381941+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000001F4161C03A0>> использован
+2023-06-21T12:07:43.381941+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:07:43.381941+0300 INFO Сформированное сообщение random_moew_sentence: Мяу - мяу мяу мяу мяу мяу мяу мяу мяу мяу!
+2023-06-21T12:07:43.381941+0300 INFO Сформированное сообщение sentence: Мяу - мяу мяу мяу мяу мяу мяу мяу мяу мяу!
+2023-06-21T12:07:43.382941+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу - мяу мяу мяу мяу мяу мяу мяу мяу мяу!
+2023-06-21T12:07:43.382941+0300 INFO Получен объект метрики текста: <PyQt5.QtGui.QFontMetrics object at 0x000001F41614FA00>
+2023-06-21T12:07:43.382941+0300 INFO Объект _elided создан: Мяу - мяу мяу мяу мяу мяу мяу мяу мяу мяу!
+2023-06-21T12:07:44.405936+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000001F4161C03A0>> использован
+2023-06-21T12:07:44.405936+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:07:44.405936+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу мяу мяу мяу мяу.
+2023-06-21T12:07:44.406936+0300 INFO Сформированное сообщение sentence: Мяу мяу мяу мяу мяу мяу мяу мяу мяу. 
+2023-06-21T12:07:44.406936+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу мяу мяу мяу мяу мяу мяу мяу мяу. 
+2023-06-21T12:07:44.406936+0300 INFO Получен объект метрики текста: <PyQt5.QtGui.QFontMetrics object at 0x000001F41614F7D0>
+2023-06-21T12:07:44.406936+0300 INFO Объект _elided создан: Мяу мяу мяу мяу мяу мяу мяу мяу мяу. 
+2023-06-21T12:07:45.389926+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000001F4161C03A0>> использован
+2023-06-21T12:07:45.389926+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:07:45.389926+0300 INFO Сформированное сообщение random_moew_sentence: Мяу - мяу мяу мяу мяу мяу.
+2023-06-21T12:07:45.389926+0300 INFO Сформированное сообщение sentence: Мяу - мяу мяу мяу мяу мяу.
+2023-06-21T12:07:45.390926+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу - мяу мяу мяу мяу мяу.
+2023-06-21T12:07:45.390926+0300 INFO Получен объект метрики текста: <PyQt5.QtGui.QFontMetrics object at 0x000001F41614FA00>
+2023-06-21T12:07:45.390926+0300 INFO Объект _elided создан: Мяу - мяу мяу мяу мяу мяу.
+2023-06-21T12:07:46.653914+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000001F4161C03A0>> использован
+2023-06-21T12:07:46.653914+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:07:46.653914+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу мяу мяу.
+2023-06-21T12:07:46.654914+0300 INFO Сформированное сообщение sentence: Мяу мяу мяу мяу мяу мяу мяу.
+2023-06-21T12:07:46.654914+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу мяу мяу мяу мяу мяу мяу.
+2023-06-21T12:07:46.654914+0300 INFO Получен объект метрики текста: <PyQt5.QtGui.QFontMetrics object at 0x000001F41614F7D0>
+2023-06-21T12:07:46.654914+0300 INFO Объект _elided создан: Мяу мяу мяу мяу мяу мяу мяу.
+2023-06-21T12:07:47.806093+0300 INFO Метод <bound method MainWindow.add_text of <__main__.MainWindow object at 0x000001F4161C03A0>> использован
+2023-06-21T12:07:47.806093+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:07:47.806093+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу - мяу мяу мяу мяу мяу!
+2023-06-21T12:07:47.806093+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:07:47.807093+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу мяу мяу мяу мяу мяу мяу?
+2023-06-21T12:07:47.807093+0300 INFO ['мяу', 'мяу', 'мяу', 'мяу', 'мяу', 'мяу']
+2023-06-21T12:07:47.807093+0300 INFO Сформированное сообщение random_moew_sentence: Мяу мяу мяу: мяу мяу, мяу?
+2023-06-21T12:07:47.807093+0300 INFO Сформированное сообщение sentence: Мяу мяу мяу мяу мяу - мяу мяу мяу мяу мяу! Мяу мяу мяу мяу мяу мяу мяу мяу мяу? Мяу мяу мяу: мяу мяу, мяу? 
+2023-06-21T12:07:47.807093+0300 INFO ПРЕДЛОЖЕНИЕ ДЛЯ ВСТАВКИ ПОЛУЧЕНО: Мяу мяу мяу мяу мяу - мяу мяу мяу мяу мяу! Мяу мяу мяу мяу мяу мяу мяу мяу мяу? Мяу мяу мяу: мяу мяу, мяу? 
+2023-06-21T12:07:47.807093+0300 INFO Получен объект метрики текста: <PyQt5.QtGui.QFontMetrics object at 0x000001F41614FA00>
+2023-06-21T12:07:47.808093+0300 INFO Объект _elided создан: Мяу мяу мяу мяу мяу - мяу мяу мяу мяу мяу! Мяу мя…
